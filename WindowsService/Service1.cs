@@ -28,7 +28,7 @@ namespace WindowsService
             WriteEventLogEntry("Process Start Generator Climate CSV");
 
             this.timer = new Timer();
-            this.timer.Interval = 300000; //5 min 
+            this.timer.Interval = 3000000; //5 min 
             this.timer.Elapsed += this.timerExecute;
             this.timer.AutoReset = true;
             this.timer.Enabled = true;
